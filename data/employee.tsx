@@ -1,0 +1,32 @@
+export const employees = [
+  {
+    id: "1",
+    name: "John Doe",
+    designation: "Software Engineer",
+    department: "Engineering",
+    email: "john@example.com",
+    phone: "9876543210",
+    experience: "4 Years",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    id: "2",
+    name: "Jane Smith",
+    designation: "UI/UX Designer",
+    department: "Design",
+    email: "jane@example.com",
+    phone: "9876543211",
+    experience: "3 Years",
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    id: "3",
+    name: "Michael Johnson",
+    designation: "Project Manager",
+    department: "Management",
+    email: "michael@example.com",
+    phone: "9876543212",
+    experience: "6 Years",
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+];

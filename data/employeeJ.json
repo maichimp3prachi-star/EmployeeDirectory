@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "designation": "Software Engineer",
+    "department": "Engineering",
+    "email": "john.doe@example.com",
+    "phone": "+91 9876543210",
+    "experience": "4 Years",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Emma Wilson",
+    "designation": "UI/UX Designer",
+    "department": "Design",
+    "email": "emma.wilson@example.com",
+    "phone": "+91 9876543211",
+    "experience": "3 Years",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Michael Brown",
+    "designation": "Project Manager",
+    "department": "Management",
+    "email": "michael.brown@example.com",
+    "phone": "+91 9876543212",
+    "experience": "7 Years",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Sophia Taylor",
+    "designation": "QA Engineer",
+    "department": "Quality Assurance",
+    "email": "sophia.taylor@example.com",
+    "phone": "+91 9876543213",
+    "experience": "2 Years",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+    "id": "5",
+    "name": "David Anderson",
+    "designation": "Backend Developer",
+    "department": "Engineering",
+    "email": "david.anderson@example.com",
+    "phone": "+91 9876543214",
+    "experience": "5 Years",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Olivia Martin",
+    "designation": "HR Executive",
+    "department": "Human Resources",
+    "email": "olivia.martin@example.com",
+    "phone": "+91 9876543215",
+    "experience": "4 Years",
+    "image": "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+    "id": "7",
+    "name": "James Thomas",
+    "designation": "DevOps Engineer",
+    "department": "Infrastructure",
+    "email": "james.thomas@example.com",
+    "phone": "+91 9876543216",
+    "experience": "6 Years",
+    "image": "https://randomuser.me/api/portraits/men/7.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Ava Harris",
+    "designation": "Business Analyst",
+    "department": "Business",
+    "email": "ava.harris@example.com",
+    "phone": "+91 9876543217",
+    "experience": "5 Years",
+    "image": "https://randomuser.me/api/portraits/women/8.jpg"
+  }
+]
