@@ -1,6 +1,6 @@
 import { Image, Text, View } from "react-native";
 import { greetingStyles } from "../../styles/greetingStyle";
-const companyLogo = require("../../assets/images/company-logo.jpeg");
+const companyLogo = require("../../assets/images/logo.jpeg");
 
 interface GreetingProps {
   name: string;
