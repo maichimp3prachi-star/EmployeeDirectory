@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import {
-    FlatList,
-    Image,
-    Pressable,
-    StyleSheet,
-    Text,
-    View,
+  FlatList,
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from "react-native";
 
-import employees from "../data/employeeJ.json"; // this is for json file
-
-// import { employees } from "../data/employee"; // this is for ts file
+import employees from "../../data/employeeJ.json";
 
 export default function DetailScreen() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [searchText, setSearchText] = useState("");
 
   const toggleDetails = (id: string) => {
     if (expandedId === id) {
@@ -23,11 +23,32 @@ export default function DetailScreen() {
     }
   };
 
+  // Filter employees based on search text
+  const filteredEmployees = employees.filter((employee) => {
+    const search = searchText.toLowerCase();
+
+    return (
+      employee.name.toLowerCase().includes(search) ||
+      employee.designation.toLowerCase().includes(search) ||
+      employee.department.toLowerCase().includes(search)
+    );
+  });
+
   return (
     <View style={styles.container}>
+      {/* Search Bar */}
+      <TextInput
+        style={styles.searchInput}
+        placeholder="Search employee..."
+        placeholderTextColor="#888"
+        value={searchText}
+        onChangeText={setSearchText}
+      />
+
       <FlatList
-        data={employees}
+        data={filteredEmployees}
         keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => {
           const isExpanded = expandedId === item.id;
 
@@ -64,6 +85,9 @@ export default function DetailScreen() {
             </View>
           );
         }}
+        ListEmptyComponent={
+          <Text style={styles.emptyText}>No employee found.</Text>
+        }
       />
     </View>
   );
@@ -74,6 +98,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#25292e",
     padding: 15,
+  },
+
+  searchInput: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 12,
+    fontSize: 16,
+    marginBottom: 15,
   },
 
   card: {
@@ -127,5 +160,12 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginVertical: 3,
     color: "#333",
+  },
+
+  emptyText: {
+    color: "#fff",
+    textAlign: "center",
+    marginTop: 30,
+    fontSize: 18,
   },
 });

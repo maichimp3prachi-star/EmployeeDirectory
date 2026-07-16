@@ -1,13 +1,9 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home Screen</Text>
-      <Link href="/detail" style={styles.button}>
-        Go to Employee Detail screen
-      </Link>
     </View>
   );
 }
