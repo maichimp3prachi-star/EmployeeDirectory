@@ -1,26 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
+import Greeting from "../../components/homescreen/greeting";
+import { homeStyles } from "../../styles/homeScreenStyle";
 
-export default function Index() {
+const employeeName = "Jenny";
+
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
+    <View style={homeStyles.container}>
+      <Greeting name={employeeName} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    color: "#fff",
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: "underline",
-    color: "#fff",
-  },
-});
