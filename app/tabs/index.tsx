@@ -1,5 +1,6 @@
 import { View } from "react-native";
 
+import EmployeeBanner from "../../components/homescreen/employeeBanner";
 import Greeting from "../../components/homescreen/greeting";
 import SearchBar from "../../components/homescreen/searchBar";
 import StatisticCard from "../../components/homescreen/statisticCard";
@@ -40,6 +41,8 @@ export default function HomeScreen() {
           backgroundColor="#F3E5F5"
         />
       </View>
+
+      <EmployeeBanner />
     </View>
   );
 }
